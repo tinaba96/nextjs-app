@@ -6,7 +6,7 @@ import Highcharts from 'highcharts/highstock';
 
 const options: Highcharts.Options = {
     title: {
-      text: 'My chart',
+      text: 'スコア推移',
     },
     series: [
       {
