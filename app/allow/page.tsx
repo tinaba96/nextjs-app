@@ -62,8 +62,8 @@ const HighChart: React.FC = () => {
                   'L', arrowEndX, arrowEndY, // 新しい終点
                 ])
                 .attr({
-                  stroke: 'black',
-                  'stroke-width': 2,
+                  stroke: '#7C7C7C',
+                  'stroke-width': 1,
                 })
                 .add();
 
@@ -84,8 +84,8 @@ const HighChart: React.FC = () => {
                   'L', arrowHeadX2, arrowHeadY2, // 右側の矢印先端
                 ])
                 .attr({
-                  stroke: 'black',
-                  'stroke-width': 2,
+                  'stroke-width': 1,
+                  stroke: '#7C7C7C',
                   'stroke-linecap': 'round',
                 })
                 .add();
@@ -103,6 +103,8 @@ const HighChart: React.FC = () => {
       },
       min: 0,
       max: 20,
+      gridLineDashStyle: 'Dot',
+      gridLineWidth: 1,         
     },
     yAxis: {
       title: {
@@ -110,6 +112,8 @@ const HighChart: React.FC = () => {
       },
       min: 0,
       max: 100,
+      gridLineDashStyle: 'Dot',
+      gridLineWidth: 1,         
     },
     series: [
       {
